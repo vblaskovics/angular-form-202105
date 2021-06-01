@@ -8,6 +8,7 @@ import { DemoFormSkuWithBuilderComponent } from './demo-form-sku-with-builder/de
 import { DemoFormWithValidationExplicitComponent } from './demo-form-with-validation-explicit/demo-form-with-validation-explicit';
 import { DemoFormWithValidationShorthandComponent } from './demo-form-with-validation-shorthand/demo-form-with-validation-shorthand';
 import { DemoFormWithCustomValidationComponent } from './demo-form-with-custom-validation/demo-form-with-custom-validation';
+import { DemoFormWithEventsComponent } from './demo-form-with-events/demo-form-with-events';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DemoFormWithCustomValidationComponent } from './demo-form-with-custom-v
     DemoFormSkuWithBuilderComponent,
     DemoFormWithValidationExplicitComponent,
     DemoFormWithValidationShorthandComponent,
-    DemoFormWithCustomValidationComponent
+    DemoFormWithCustomValidationComponent,
+    DemoFormWithEventsComponent
   ],
   imports: [
     BrowserModule,
