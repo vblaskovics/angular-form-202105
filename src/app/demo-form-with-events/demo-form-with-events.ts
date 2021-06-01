@@ -15,6 +15,15 @@ export class DemoFormWithEventsComponent implements OnInit {
     });
 
     this.sku = this.myForm.controls['sku'];
+
+    this.sku.valueChanges.subscribe((value: string) => {
+      console.log('sku changed:', value);
+    });
+
+    this.myForm.valueChanges.subscribe((formValue: any) => {
+      console.log('form changed:', formValue);
+    });
+
   }
 
   ngOnInit(): void {
