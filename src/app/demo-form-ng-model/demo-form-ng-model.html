@@ -1,0 +1,19 @@
+<div class="ui raised segment">
+    <h2 class="ui header">Demo Form with ng-model</h2>
+
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)" class="ui form">
+
+        <div class="field">
+            <label for="productNameInput">Product Name</label>
+            <input type="text"
+                name="productName"
+                id="productNameInput"
+                placeholder="Product Name"
+                [(ngModel)]="productName">
+        </div>
+
+        <div *ngIf="!myForm.valid" class="ui error message">Form is invalid</div>
+
+        <button class="ui button" type="submit">Submit</button>
+    </form>
+</div>
